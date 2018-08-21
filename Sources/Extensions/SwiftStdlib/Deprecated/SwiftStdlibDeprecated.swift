@@ -19,24 +19,6 @@ public extension Bool {
 
 }
 
-public extension Bool {
-
-    /// SwifterSwift: Toggle value for bool.
-    ///
-    ///        var bool = false
-    ///        bool.toggle()
-    ///        print(bool) -> true
-    ///
-    /// - Returns: inversed value of bool.
-	@available(*, deprecated: 4.3, message: "Use !self instead.")
-	@discardableResult
-    public mutating func toggle() -> Bool {
-        self = !self
-        return self
-    }
-
-}
-
 extension String {
 
 	#if canImport(Foundation)
